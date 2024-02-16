@@ -72,6 +72,9 @@ configure = ($routeProvider, $locationProvider, $httpProvider, $provide, $tgEven
     $routeProvider.when("/",
         {
             templateUrl: "home/home.html",
+            access: {
+                requiresLogin: true
+            },
             controller: "Home",
             controllerAs: "vm"
             loader: true,
@@ -86,6 +89,9 @@ configure = ($routeProvider, $locationProvider, $httpProvider, $provide, $tgEven
     $routeProvider.when("/discover",
         {
             templateUrl: "discover/discover-home/discover-home.html",
+            access: {
+                requiresLogin: true
+            },
             controller: "DiscoverHome",
             controllerAs: "vm",
             title: "PROJECT.NAVIGATION.DISCOVER",
@@ -96,6 +102,9 @@ configure = ($routeProvider, $locationProvider, $httpProvider, $provide, $tgEven
     $routeProvider.when("/discover/search",
         {
             templateUrl: "discover/discover-search/discover-search.html",
+            access: {
+                requiresLogin: true
+            },
             title: "PROJECT.NAVIGATION.DISCOVER",
             loader: true,
             controller: "DiscoverSearch",
