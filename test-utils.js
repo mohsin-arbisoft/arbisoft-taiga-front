@@ -6,8 +6,7 @@
  * Copyright (c) 2021-present Kaleidos Ventures SL
  */
 
-(function() {
-    var searchOriginal = function(obj) {
+(function() { var searchOriginal = function(obj) {
         if (obj._promise) {
             return obj;
         } else {
